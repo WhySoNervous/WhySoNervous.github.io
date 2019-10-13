@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>我的军训生活</title>
+		<style>
+			.box0 {
+				width: 880px;
+				height: 1000px;
+				background-color: honeydew;
+				padding-top: 10px;
+				margin: 0 auto;
+			}
+			
+			.box1 {
+				width: 880px;
+				height: 50px;
+				background-color: coral;
+				margin-top: 8px;
+			}
+			
+			.box2 {
+				width: 170px;
+				height: 934px;
+				background-color: #FFE4C4;
+				margin-top: 8px;
+				margin-right: 6px;
+				float: left
+			}
+			
+			.box3 {
+				width: 528px;
+				height: 200px;
+				background-color: bisque;
+				margin-top: 8px;
+				height: 934px;
+				float: left
+			}
+			
+			.box4 {
+				width: 170px;
+				height: 934px;
+				background-color: #FFE4C4;
+				margin-top: 8px;
+				margin-left: 6px;
+				float: left
+			}
+			
+			.box5 {
+				width: 528px;
+				background-color: lightyellow;
+				height: 300px;
+			}
+			
+			.box6 {
+				width: 880px;
+				margin: 0 auto;
+				background-color: coral;
+				height: 100px;
+				margin-top: 8px;
+			}
+			
+			.box7 {
+				background-color: lightyellow;
+				width: 528px;
+				height: 612px;
+			}
+			
+			#myImg {
+				border-radius: 5px;
+				cursor: pointer;
+				transition: 0.3s;
+			}
+			
+			#myImg:hover {
+				opacity: 0.7;
+			}
+			/* The Modal (background) */
+			
+			.modal {
+				display: none;
+				/* Hidden by default */
+				position: fixed;
+				/* Stay in place */
+				z-index: 1;
+				/* Sit on top */
+				padding-top: 100px;
+				/* Location of the box */
+				left: 0;
+				top: 0;
+				width: 100%;
+				/* Full width */
+				height: 100%;
+				/* Full height */
+				overflow: auto;
+				/* Enable scroll if needed */
+				background-color: rgb(0, 0, 0);
+				/* Fallback color */
+				background-color: rgba(0, 0, 0, 0.9);
+				/* Black w/ opacity */
+			}
+			/* Modal Content (image) */
+			
+			.modal-content {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+			}
+			/* Caption of Modal Image */
+			
+			#caption {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+			}
+			/* Add Animation */
+			
+			.modal-content,
+			#caption {
+				-webkit-animation-name: zoom;
+				-webkit-animation-duration: 0.6s;
+				animation-name: zoom;
+				animation-duration: 0.6s;
+			}
+			
+			@-webkit-keyframes zoom {
+				from {
+					-webkit-transform: scale(0)
+				}
+				to {
+					-webkit-transform: scale(1)
+				}
+			}
+			
+			@keyframes zoom {
+				from {
+					transform: scale(0.1)
+				}
+				to {
+					transform: scale(1)
+				}
+			}
+			/* The Close Button */
+			
+			.close {
+				position: absolute;
+				top: 15px;
+				right: 35px;
+				color: #f1f1f1;
+				font-size: 40px;
+				font-weight: bold;
+				transition: 0.3s;
+			}
+			
+			.close:hover,
+			.close:focus {
+				color: #bbb;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			/* 100% Image Width on Smaller Screens */
+			
+			@media only screen and (max-width: 700px) {
+				.modal-content {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box0">
+			<div class="box1" align="center">
+				<h1>我的军训生活</h1></div>
+			<div class="box2" align="center">
+				<h2>照片墙</h2>
+				<h3><a href="https://whysonervous.github.io/jieshu/index.html">军训</a></h3>
+				<h3><a href="https://whysonervous.github.io/tongguanyao/index.html">铜官窑一日游</a></h3>
+
+				<h3><a href="https://whysonervous.github.io/luoge/index.html">罗哥</a></h3>
+				<h3><a href="https://whysonervous.github.io/wentiezhu/index.html">文铁柱</a></h3>
+
+
+			</div>
+			<div class="box3">
+				<div class="box5" align="center">
+					<img id="myImg" src="img/IMG_3022.JPG" alt="A big family" width="300" height="200">
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+						<span class="close">×</span>
+						<img class="modal-content" id="img01">
+						<div id="caption"></div>
+					</div>
+
+					<script>
+						var modal = document.getElementById('myModal');
+						var img = document.getElementById('myImg');
+						var modalImg = document.getElementById("img01");
+						var captionText = document.getElementById("caption");
+						img.onclick = function() {
+							modal.style.display = "block";
+							modalImg.src = this.src;
+							modalImg.alt = this.alt;
+							captionText.innerHTML = this.alt;
+						}
+						var span = document.getElementsByClassName("close")[0];
+						span.onclick = function() {
+							modal.style.display = "none";
+						}
+					</script>
+					<h3>军训合影</h3>
+					<h4>（江姐乔姐没来照emmm）</h4>
+				</div>
+				<div class="box7">
+					<h3 class="content" align="center">军训的感想</h3>
+					<h4>从一开始的抵触厌烦，想尽方法划水，到最后每个人都认认真真的站军姿踢正步。17天的军训让我和我们都变化了很多。</h4>
+					<h4>那份在一声声的口号声中喊出的是浓浓的集体荣誉感和爱国情怀。建国70周年国庆大阅兵更让我深感祖国的繁荣与富强。</h4>
+					<h4>军训时间与我们未来的学习科学文化知识的时间相比较，虽然短暂，但却是人生难得的宝贵积累与沉淀。紧张而有序的军训生活，有利于我们学会有效的利用宝贵的时间，来安排日常的学习生活，提高学习效率及效果。通过军训，有利于我们懂得学海无涯苦作舟的人生哲学。遇到困难、挫折和考验能以平常心对待，勇于拼搏挑战，超越自我，提高生活自理能力，培养思想上的自立和独立，还能帮助我们养成严格自律的良好习惯。</h4>
+					<h4>有人曾问我“每天都那么严肃，站那么长时间军姿，不累吗？”我想说，不累是不存在的，但是那份将自己和军人看齐，以军人的标准要求自己，保家卫国的责任感和使命感是毕生都难得的宝贵经验。</h4>
+					<h4 align="right">宋佳诺</h4>
+					<h4 align="right">2019.10.13</h4>
+				</div>
+			</div>
+			<div class="box4" align="center">
+				<a href="https://baike.baidu.com/item/%E5%86%9B%E8%AE%AD/1121627?fr=aladdin">
+					<h3>军训小百科</a></h3></div>
+
+		</div>
+		</div>
+		<div class="box6" align="center">
+			<h1>我们是优秀的三营，我们是文艺的赵家军，我们是前途似锦的湘大人!</h1></div>
+
+	</body>
+
+</html>
