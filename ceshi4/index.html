@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+		<script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+		<style>
+			.modal-content {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+			}
+			/* Caption of Modal Image */
+			
+			#caption {
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 700px;
+				text-align: center;
+				color: #ccc;
+				padding: 10px 0;
+				height: 150px;
+			}
+			/* Add Animation */
+			
+			.modal-content,
+			#caption {
+				-webkit-animation-name: zoom;
+				-webkit-animation-duration: 0.6s;
+				animation-name: zoom;
+				animation-duration: 0.6s;
+			}
+			
+			@-webkit-keyframes zoom {
+				from {
+					-webkit-transform: scale(0)
+				}
+				to {
+					-webkit-transform: scale(1)
+				}
+			}
+			
+			@keyframes zoom {
+				from {
+					transform: scale(0.1)
+				}
+				to {
+					transform: scale(1)
+				}
+			}
+			/* The Close Button */
+			
+			.close {
+				position: absolute;
+				top: 15px;
+				right: 35px;
+				color: #f1f1f1;
+				font-size: 40px;
+				font-weight: bold;
+				transition: 0.3s;
+			}
+			
+			.close:hover,
+			.close:focus {
+				color: #bbb;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			/* 100% Image Width on Smaller Screens */
+			
+			@media only screen and (max-width: 700px) {
+				.modal-content {
+					width: 100%;
+				}
+			}
+			
+			body {
+				margin: 0;
+			}
+			
+			.box0 {
+				width: 880px;
+				height: 1000px;
+				background-color: honeydew;
+				padding-top: 10px;
+				margin: 0 auto;
+				margin-top: 10px;
+			}
+			
+			.box1 {
+				width: 880px;
+				height: 50px;
+				background-color: coral;
+				margin: 0 auto;
+			}
+			
+			.box2 {
+				width: 320px;
+				height: 434px;
+				background-color: #FFE4C4;
+				margin-top: 8px;
+				margin-right: 6px;
+				float: left
+			}
+			
+			.box3 {
+				width: 540px;
+				height: 434px;
+				background-color: bisque;
+				margin-top: 8px;
+				float: left
+			}
+			
+			.box4 {
+				width: 880px;
+				height: 2550px;
+				background-color: #FFE4C4;
+				margin-top: 8px;
+				float: left
+			}
+			
+			.box5 {
+				width: 528px;
+				background-color: lightyellow;
+				height: 300px;
+			}
+			
+			.box6 {
+				width: 880px;
+				margin: 0 auto;
+				background-color: coral;
+				height: 100px;
+				margin-top: 8px;
+			}
+			
+			.box7 {
+				background-color: lightyellow;
+				width: 528px;
+				height: 612px;
+			}
+			
+			.box8 {
+				background-color: dodgerblue;
+			}
+			
+			#myImg {
+				border-radius: 5px;
+				cursor: pointer;
+				transition: 0.3s;
+			}
+			
+			#myImg:hover {
+				opacity: 0.7;
+			}
+			/* The Modal (background) */
+			
+			.modal {
+				display: none;
+				/* Hidden by default */
+				position: fixed;
+				/* Stay in place */
+				z-index: 1;
+				/* Sit on top */
+				padding-top: 100px;
+				/* Location of the box */
+				left: 0;
+				top: 0;
+				width: 100%;
+				/* Full width */
+				height: 100%;
+				/* Full height */
+				overflow: auto;
+				/* Enable scroll if needed */
+				background-color: rgb(0, 0, 0);
+				/* Fallback color */
+				background-color: rgba(0, 0, 0, 0.9);
+				/* Black w/ opacity */
+			}
+			/* Modal Content (image) */
+		</style>
+	</head>
+
+	<body style="height:1000px">
+		<div class="box8">
+			<h1 align="center">老子故里，生态涡阳。</h1>
+		</div>
+		<div class="sticky">
+			<nav class="top-bar" data-topbar data-options="is_hover: false">
+				<ul class="title-area">
+					<li class="name">
+						<h1><a href="#">WebSiteName</a></h1>
+					</li>
+
+					<li class="toggle-topbar menu-icon">
+						<a href="#"><span>Menu</span></a>
+					</li>
+				</ul>
+
+				<section class="top-bar-section">
+					<ul class="left">
+						<li class="active">
+							<a href="#">主页</a>
+						</li>
+						<li class="has-dropdown">
+							<a href="#">风景人文</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">First link in dropdown</a>
+								</li>
+								<li>
+									<a href="#">Second link in dropdown</a>
+								</li>
+								<li class="active">
+									<a href="#">Active link in dropdown</a>
+								</li>
+							</ul>
+						</li>
+						<li class="has-dropdown">
+							<a href="#">美食</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">First link in dropdown</a>
+								</li>
+								<li>
+									<a href="#">Second link in dropdown</a>
+								</li>
+								<li class="active">
+									<a href="#">Active link in dropdown</a>
+								</li>
+							</ul>
+						</li>
+						<li class="has-dropdown">
+							<a href="#">我的母校</a>
+							<ul class="dropdown">
+								<li>
+									<a href="#">First link in dropdown</a>
+								</li>
+								<li>
+									<a href="#">Second link in dropdown</a>
+								</li>
+								<li class="active">
+									<a href="#">Active link in dropdown</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</nav>
+
+			<script>
+				$(document).ready(function() {
+					$(document).foundation();
+				})
+			</script>
+
+		</div>
+
+		<div class="box0">
+			<div class="box1">
+				<h2 align="center">我的家乡，安徽涡阳</h2></div>
+			<div class="box2">
+				<img id="myImg" src="img/1337651_770213_b58f2e5257_o.jpg" alt="Sweet Home" width="528" height="300">
+
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<span class="close">×</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
+
+				<script>
+					var modal = document.getElementById('myModal');
+					var img = document.getElementById('myImg');
+					var modalImg = document.getElementById("img01");
+					var captionText = document.getElementById("caption");
+					img.onclick = function() {
+						modal.style.display = "block";
+						modalImg.src = this.src;
+						modalImg.alt = this.alt;
+						captionText.innerHTML = this.alt;
+					}
+					var span = document.getElementsByClassName("close")[0];
+					span.onclick = function() {
+						modal.style.display = "none";
+					}
+				</script>
+			</div>
+			<div class="box3">
+				<h4>&nbsp&nbsp&nbsp&nbsp涡阳县，隶属于安徽省毫州市。清同治三年（1864年）元月，从宿州南部划出19保46圩，设立新县。以原雉河集为县治，循北魏之“涡阳”钦定县名，赐名“涡阳县”。</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp涡阳县位于淮北平原中部，地处亳州市中心地带，与豫、鲁、苏三省毗邻，国土面积2107平方公里。位于北纬33°20′～33°47′，东经115°53′～116°33′。涡阳县属暖温带半湿润季风气候，其主要特征是：气候温和，雨量适中，雨热同步，光照充足，无霜期较长，光、热资源比较丰富。
+<h4>&nbsp&nbsp&nbsp&nbsp涡阳区位优越，交通快捷便利。自古为"梁宋吴楚之冲，齐鲁汴洛之道"，有"皖北门户"之称。2017年全县地区生产总值(GDP)276.9亿元，同比增长9.3%。</h4>
+			</div>
+			<div class="box4">
+				<h3 align="center">历史沿革</h3>
+				<h4>&nbsp&nbsp&nbsp&nbsp据《禹贡》记载：约公元前21世纪，大禹治水成功，分天下为九州。涡阳县境属豫州，与徐州毗邻。</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp，约公元前16世纪，县境为商南亳之畿辅</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp，周武王灭商，县境属陈、胡两国</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp，县境分属楚、陈、宋国。涡河北部县境属宋国相县，南部属陈国夷邑，陈是个小诸侯国，国下无县。公元前约571年，老子降诞于宋国相县厉乡曲仁里（今县境涡北）。公元前479年，楚灵王伐徐国，途中在县境楚店建行宫，又在乾溪旁建章华台。</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp，楚国强盛，陈、宋被楚灭，县境被占掠属楚地。</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp（前221年），统一中国，全国建置三十六郡。县境分属谯（今亳州）、铚（今临涣）、相（今淮北）三县。后楚国相县荒芜，原陈国地设铚、城父两县。《清一统志》载，城父县东南方置下城父聚，位于蒙城县西北八十华里，清改为雉河集，今涡阳县城附近，皆属泗水郡，县境亦属之。</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp（前209年）七月，陈胜、吴广起义于蕲（今宿州），其中攻占部分县境。后陈胜为秦将章邯所败，于下城父聚为御者庄贾所杀。
+
+汉沿秦制，县境跨泗水、汝南两郡，属豫州。西汉初，泗水郡更名为沛郡，邻37县，县境分属苦、铚、城父、山桑、扶阳（旧福宁镇）和汝阴（今县南部属汝南郡）等县。东汉初，城父、山桑改属汝南郡。县境在汝南郡与沛郡交接处。
+
+三国时代，县境属魏国。魏置谯郡，下辖沛、汝南郡。
+
+东晋、十六国时代，公元322年，晋退守寿春，县境被后赵石勒所占。公元354年，县境为前燕占。公元370年，前秦灭前燕，县境属之。东晋太元八年（383年），晋军在肥水（即著名淝水之战）大破前秦苻坚军，攻克豫州大部，县境复归东旧志中的涡阳城池图区划晋，在山桑县境侨置蒙县，为谯郡治。</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp南北朝时代，县境屡遭兵燹。南朝宋文帝元嘉二十七年（450年），北魏太武帝率兵南掠，占豫州、淮西等地。自此，淮河以北隶属北魏。北魏黄兴元年（467年），山桑改名涡阳县（南兖州马头郡治所，今蒙城县北）。涡阳得名即自北魏始。《魏书•地形志》：北魏景明（500～503年）设涡阳郡，为原山桑地，属谯州，孝昌中废，后县境数易其主。
+
+北魏孝昌三年（527年），县境属梁，梁改涡阳为西徐州。东魏孝静帝武定六年（548年）时，改西徐州为涡阳县。次年建置涡州，属南谯郡（今县城东北部90里），后又置涡阳县。
+
+北魏时，由于连年战乱，县境一度曾划归三郡。即临涣郡领：铚、丹城（今县丹城集）、解城（白掸，今龙山集北），以铚为郡治。蒙郡领：蒙（今蒙关店）、勇山（今龙山），以蒙为郡治。又置颖于汝阴郡，以汝阴、戈阳为郡治。</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp唐太宗贞观十七年（643年），废谯州，县境属河南道亳州，跨谯、汝阴两郡，分属城父、山桑、临涣、永城、真源（今县义门镇）等县。玄宗天宝元年（742年），山桑县更名为蒙城县。宪宗元和九年（814年），从亳州割临涣归宿州。
+
+北宋，真宗大中祥符七年（1014年），唐时真源县改三真。县境三真、谯、城父、蒙城等七县属亳州，隶淮南路。宋神宗熙宁五年（1070年），分归淮南东路。宋南渡后，县境属金。绍兴十一年（1141年）南宋与金达成和议，以淮水中流为疆。
+
+金将蒙城改隶寿州。此时，县境分属亳、颖、宿、寿四州，统隶于南京路，至金哀宗天兴年间又归于宋。
+
+元朝统一中国，世祖至元二年（1265年），撤宿州、颖州两州所领四县，归并于州，并城父入谯县，酂入永城，后又复置，仍属亳州。此后州县之制紊乱。至元八年（1271年）从汴梁路分置归德府，下辖亳、宿两州。至元三十年（1293年），分置汝宁府，辖颖州。蒙城属安丰路寿春府。以上三府均由“河南江北行中书省”统辖。涡阳县境分隶亳、颖、蒙、宿。
+
+明洪武初，废城父县并亳，亳州降为县，沿元制，仍由归德府统辖。洪武四年（1371年）二月，从归德府划出宿州；三月，从汝宁府划出颍州，与蒙城县同属凤阳府，直隶南京。明孝宗弘治九年（1496年）十月，亳县又升为州，在县境义门设巡检司。
+
+清顺治二年（1645年）四月，县境属“江南承宣布正使司”。顺治十八年（1661年），分置“江南左布政使司”，领安徽、隶江宁。康熙六年（1667年），更置为“安徽布政使司”。雍正二年（1724年），蒙城县改属亳州。十三年（1735年），升颍州为府，亳州、蒙城属颖州府，宿州属凤阳府，县境分属凤阳、颍州两府。至乾隆二十五年（1760年），“安徽布政使司”驻安庆。次年，改设安徽清咸丰二年（1852年），颖、宿两州一带饥民遍野，民愤激昂，更兼太平军北伐节节胜利。十月，捻党首领张乐行率众在蒙、亳之间雉河集“山西会馆”（今涡阳县城）会盟抗清武装起义，民众纷起，声势煊赫，杀官吏，占城池，捻军转战豫、皖、苏等数省，屡次重创清军，沉重打击了清王朝的统治。同治二年（1863年），捻军领袖张乐行殉难。雉河集界皖豫之间，人稀地广，距州县皆百里之外，为蒙、亳、宿、阜居心之地，清政府难以兼顾。清同治三年（1864年）元月，为防止再次爆发农民起义，安徽巡抚唐训方，布政司英翰上奏以“雉河集为蒙、亳接壤之区，距城较远，以致强寇叠起，屡抚屡叛，非添设州县，教养兼施，不足以资弹压而移风化，今拟于雉河集添设县城一座。”后唐训方去职，乔松年任安徽巡抚。不久，同治帝准安徽巡抚乔松年、两江总督曾国藩、亲王僧格林沁奏请，于是从亳州东部划出13保96圩，从阜阳北部划出4集25圩，从蒙城西部划出15保45圩，从宿州南部划出19保46圩，设立新县。以原雉河集为县治，循北魏之“涡阳”钦定县名，赐名“涡阳县”，属颖州府。</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp民国元年（1912年），废颖州府，县隶属安徽省。民国三年（1914年）六月，省下设道级行政机构，涡阳县属淮四道（道驿驻凤阳）。民国二十一年（1932年）废道，在颖州设置安徽省第七行政督察专员公署，辖涡阳县。民国二十九年（1940年），第七行署改称安徽省第三行政督察专员公署，后改属阜阳专署，辖涡阳县。
+
+抗日战争时期，1939年9月，中国共产党领导的新四军游击六支队进驻涡北新兴集，创建豫皖苏边区抗日民主根据地。1940年元月，成立涡北抗敌联合会（涡北民主政府）和涡北县委。1944年秋，建涡永县，属豫皖苏边区解放区党委和皖北特委领导。</h4>
+				<h4>&nbsp&nbsp&nbsp&nbsp解放战争时期，1945年2月，改涡永县为雪涡县。1947年，在县境东建宿蒙县。7月，在县境西设涡亳县。11月，在县境南立涡阳县。上述四县隶属中国共产党领导的豫皖苏边区解放区皖北专员公署第三公署。1948年5月20日，涡阳全境解放。1949年3月，撤销雪涡县、涡亳县、涡阳县、宿蒙县，恢复原涡阳县，隶属阜阳专员公署。
+
+1952年，安徽省人民政府建立后，阜阳专员公署驻阜阳县城，辖涡阳县。
+
+1996年7月，撤销阜阳地区行政专员公署，改设阜阳市，仍辖涡阳县。
+
+2000年6月20日，成立地级亳州市，辖涡阳县、蒙城县、利辛县和谯城区（原县级亳州市）</h4>
+				
+			</div>
+		</div>
+
+		</div>
+
+		</div>
+
+	</body>
+
+</html>
