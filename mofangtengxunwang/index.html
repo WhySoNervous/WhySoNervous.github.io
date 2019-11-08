@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.all {
+				width: 1349px;
+				margin: 0 auto;
+			}
+			
+			.head {
+				height: 80px;
+				width: 1240px;
+				margin: 0 auto;
+			}
+			
+			.head1 {
+				width: 740px;
+				height: 57.5px;
+				float: left;
+			}
+			
+			.head2 {
+				width: 500px;
+				height: 35px;
+				float: right;
+				margin-top: 22.5px;
+			}
+			
+			.head3 {
+				width: 68px;
+				height: 35px;
+				background-color: #F3F6F8;
+				border-top-left-radius: 20px;
+				border-bottom-left-radius: 20px;
+				float: left;
+								text-align: center;
+
+			}
+			
+			.search {
+				width: 320px;
+				height: 35px;
+				float: left;
+			}
+			
+			.button {
+				width: 68px;
+				height: 35px;
+				background-color: darkorchid;
+				float: left;
+			}
+			
+			.searchtext {
+				background-color: #F3F6F8;
+				border: none;
+			}
+			
+			.searchtext a:active {
+				border: none;
+			}
+			
+			.qqspace {
+				width: 40px;
+				height: 40px;
+				float: left;
+				margin-left: 240px;
+				margin-top: 22.5px;
+			}
+			
+			.qqemail {
+				width: 40px;
+				height: 40px;
+				float: left;
+				margin-top: 30px;
+			}
+			
+			a.qqemail:hover {
+				src="img/UC截图20191104190439.png" style="z-index: 2;" src=" url(img/UC截图20191104190508.png)" style="z-index: 1;"
+			}
+			
+			.neck {
+				width: 1240px;
+				height: 10px;
+				margin: 0 auto;
+			}
+			
+			.ad {
+				width: 1240px;
+				height: 95px;
+				margin: 0 auto;
+			}
+			
+			.main {
+				width: 1240px;
+				height: 967px;
+				margin: 0 auto;
+			}
+			
+			.box2 {
+				width: 132px;
+				height: 72px;
+				position: absolute;
+				left: 240px;
+				top: -50px;
+			}
+			
+			#rcorners2 {
+				background-color: #F1F1F1;
+				border-radius: 25px;
+				border: 2px solid #E7E7E7;
+				padding: 14px;
+				width: 480px;
+				height: 4px;
+				position: fixed;
+				left: 505px;
+				top: 35px;
+			}
+			/*导航栏*/
+			
+			.dropdown {
+				display: inline-block;
+				position: fixed;
+				top: 42px;
+			}
+			
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 20px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content a:hover {
+				background-color: #f1f1f1
+			}
+			
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			
+			.button {
+				display: inline-block;
+				padding: 0px 22px;
+				font-size: 10px;
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				outline: none;
+				color: #F1F1F1;
+				background-color: royalblue;
+				border: none;
+				border-radius: 15px;
+				box-shadow: 0 1px #999;
+				border-radius: 505px;
+				float: right;
+			}
+			
+			.button:hover {
+				background-color: royalblue
+			}
+			
+			.button:active {
+				background-color: royalblue;
+				box-shadow: 0 2px #666;
+				transform: translateY(4px);
+			}
+			/* 导航栏*/
+			
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				border: 1px solid #e7e7e7;
+				background-color: royalblue;
+			}
+			
+			li {
+				float: left;
+			}
+			
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 10px 20px;
+				text-decoration: none;
+			}
+			
+			li a:hover:not(.active) {
+				background-color: lightblue;
+			}
+			
+			li a.active {
+				color: white;
+				background-color: powderblue;
+			}
+			
+			.main1 {
+				width: 30%;
+				height: 500px;
+				float: left;
+			}
+			
+			.main2 {
+				width: 40%;
+				height: 500px;
+				float: left;
+			}
+			
+			.main3 {
+				width: 30%;
+				float: left;
+				height: 500px;
+				background-color: brown;
+			}
+			
+			.main1 {
+				a text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="all">
+			<div class="head">
+				<img src="img/qq_logo_2x.png" height="35px" width="131px" style="margin-top: 22.5px; float: left;">
+				<div class="head1">
+					<div class="head2">
+						<div class="head3">网页</div>
+						<div class="search">
+							<input type="text" class="searchtext" style="width: 300px;height: 24px;padding-top:4px;padding-bottom:4px ;padding-left: 10px;padding-right:10px ;" />
+						</div>
+						<div class="button">
+							<h2>搜狗搜索</h2></div>
+					</div>
+				</div>
+				<div class="qqspace">
+					<a href=""><img src="img/UC截图20191104190439.png"></a>
+				</div>
+				<div class="qqemail">
+					<a href=""><img src="img/UC截图20191104190448.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="neck">
+			<ul>
+				<li>
+					<a href="http://new.qq.com" target="_blank">新闻</a>
+				</li>
+				<li>
+					<a href="https://v.qq.com/" target="_blank">视频</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/photo/" target="_blank">图片</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/milite/" target="_blank">军事</a>
+				</li>
+				<li>
+					<a href="https://sports.qq.com/" target="_blank">体育</a>
+				</li>
+				<li>
+					<a href="https://sports.qq.com/nba/" target="_blank">NBA</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/ent/" target="_blank">娱乐</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/finance/" target="_blank">财经</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/tech/" target="_blank">科技</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/fashion/" target="_blank">时尚</a>
+				</li>
+				<li>
+					<a href="https://auto.qq.com/" target="_blank">汽车</a>
+				</li>
+				<li>
+					<a href="https://house.qq.com/" target="_blank">房产</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/edu/" target="_blank">教育</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/cul/" target="_blank">文化</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/games/" target="_blank">游戏</a>
+				</li>
+				<li>
+					<a href="https://new.qq.com/ch/astro/" target="_blank">星座</a>
+				</li>
+				<li>
+					<a href="" target="_blank">更多</a>
+				</li>
+
+			</ul>
+			<div class="ad"><img src="img/UC截图20191104185628.png" width="919.98px" height="74.99"><img src="img/netwatch.png" width="320px" align="right" </div>
+				<div class="main1">
+					<h1>微视频：与世界拉手</h2>
+                 <h2><a href="https://new.qq.com/omn/TWF20191/TWF2019110800186000.html"> 全面提升中希合作交流水平 推动金砖峰会取得丰硕成果</a></h2>
+                 <h3><a href="https://new.qq.com/omn/TWF20191/TWF2019110800186000.html">四中全会《决定》诞生背后 </a></h3>
+                 <h3><a href="https://new.qq.com/omn/PEG20191/PEG2019110800227600.html">外交部就习近平访问希腊举行中外媒体吹风会 理上网来</a></h3>
+                 <h3><a href="https://new.qq.com/omn/PEG20191/PEG2019110800408800.html">国际社会积极评价十九届四中全会 </a></h3>
+                 <h3><a href="https://new.qq.com/omn/PEG20191/PEG2019110800446800.html">未来的理想生活什么样？进博会给你答案 2019进博会</a></h3>
+                 <h3><a href="https://new.qq.com/omn/PEG20191/PEG2019110700489500.html">《教育强国》 第一集 第二集 第三集 第四集</a></h3>
+                 <h3><a href="https://new.qq.com/omn/PEG20191/PEG2019110800394800.html">“死亡货车”终于真相，然而CNN的乱中阴谋还在继续</a></h3></div>
+				<div class="main2">
+					<h1>今日话题</h1>
+					 <h2><a href="https://new.qq.com/rain/a/20191107A0LE6300">滴滴顺风车新规：除了性别歧视，我们还要关注什么</h2>
+					 <h3><a href="https://new.qq.com/rain/a/20191107A0MAB200">光明时评| 高校要不要禁外卖，也是道教育题</h3>
+					 <h3><a href="https://new.qq.com/rain/a/20191107A0M1X100">新京报评论| 博主带粉丝薅垮水果网店，得了小利失了大义</h3>
+					 <h3><a href="https://new.qq.com/rain/a/FIN2019110700060400">棱镜| 宝洁欧莱雅们加入新消费"巷战"：从未如此焦虑过</h3>
+					 <h3><a href="https://new.qq.com/rain/a/20191107A07CUS00">财看见| 结婚后哪些财产变为夫妻共有？哪些还属于自己？</a></h3>
+					 <h3><a href="https://new.qq.com/rain/a/20191107A0GYPE00">腾讯大家| 苗炜：在下流的时代做个守旧的人</a></h3>
+					 <h3><a href="https://new.qq.com/rain/a/TEC2019110600472600">深网| 448天后顺风车重新上线，滴滴准备好了吗？</a></h3>
+				</div>
+				<div class="main3">
+					<img src="img/UC截图20191108134509.png"</div>
+			</div>
+	</body>
+
+</html>
