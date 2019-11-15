@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="js/tools.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<style>
+			.head {
+				width: 1240px;
+				height: 88px;
+			}
+			
+			.neck {
+				width: 1240px;
+				height: 10px;
+				margin: 0 auto;
+			}
+			
+			.ad {
+				width: 1240px;
+				height: 95px;
+				margin: 0 auto;
+			}
+			
+			.main {
+				width: 1240px;
+				height: 967px;
+				margin: 0 auto;
+			}
+			
+			.button {
+				display: inline-block;
+				padding: 0px 22px;
+				font-size: 10px;
+				cursor: pointer;
+				text-align: center;
+				text-decoration: none;
+				outline: none;
+				color: #F1F1F1;
+				background-color: #ff5000;
+				border: none;
+				border-radius: 15px;
+				box-shadow: 0 1px #999;
+				border-radius: 505px;
+				float: right;
+			}
+			
+			.button:hover {
+				background-color:#ff5000
+			}
+			
+			.button:active {
+				background-color: #ff5000;
+				box-shadow: 0 2px #666;
+				transform: translateY(4px);
+			}
+			/* 导航栏*/
+			
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				border: 1px solid #e7e7e7;
+				background-color: #ff8d00;
+			}
+			
+			li {
+				float: left;
+			}
+			
+			li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 10px 20px;
+				text-decoration: none;
+			}
+			
+			li a:hover:not(.active) {
+				background-color: #ff5000;
+			}
+			
+			li a.active {
+				color: white;
+				background-color: powderblue;
+			}
+			
+			.mainbody {
+				width: 990px;
+				background-color: #B0E0E6;
+				margin: 0 auto;
+			}
+			.cotainter {
+				flex-direction: row;
+				margin-left: 20px;
+			}
+			
+			.item {
+				
+				border: 1px solid #ccc;
+				float: left;
+				margin-left: 40px;
+				margin-bottom: 40px;
+			}
+			
+			.item:hover {
+				border: 3px solid crimson;
+			}
+			
+			* {
+				margin: 0px;
+			}
+			
+			a {
+				color: #000000;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: brown;
+			}
+			*1{
+				color: #CCCCCC;
+				
+			}
+			@media (min-width:500px) {
+				
+				ul li{
+					flex-basis: 50%;
+					flex-direction: row;
+				}
+			}
+			@media(min-width:800px ) {
+				ul li{
+					flex-basis: 50%;
+					flex-direction: row;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="head"><img src="images/UC截图20191114194100.png" height="88px">
+		</div>
+		<div class="neck">
+			<ul>
+				<li>
+					<a href="https://www.taobao.com/markets/nanzhuang/2017new?spm=a21bo.2017.201867-main.2.5af911d9P2RKdv" target="_blank">男装</a>
+				</li>
+				<li>
+					<a href="https://www.taobao.com/markets/nvzhuang/taobaonvzhuang?spm=a21bo.2017.201867-main.1.5af911d9P2RKdv" target="_blank">女装</a>
+				</li>
+				<li>
+					<a href="" target="_blank">数码</a>
+				</li>
+				<li>
+					<a href="" target="_blank">家电</a>
+				</li>
+				<li>
+					<a href="" target="_blank">户外</a>
+				</li>
+				<li>
+
+			</ul>
+		</div>
+
+		<div class="wrap" id="wrap">
+			<ul class="content"></ul>
+			<a href="javascript:;" class="prev">&#60;</a>
+			<a href="javascript:;" class="next">&#62;</a>
+		</div>
+		
+		<div class="cotainter">
+			<div class="item">
+				<a href="">
+					<img src="images/TB10__To4PI8KJjSspfXXcCFXXa_!!0-item_pic_jpg_200x200q90.jpg" width="250px" />
+				</a>
+				<h5><a href="">商品简介</a></h5>
+		
+			</div>
+			<div class="item">
+				<a href="">
+					<img src="images/TB1u31XIFXXXXacXXXXXXXXXXXX_!!0-item_pic_jpg_200x200q90.jpg" width="250px" />
+				</a>
+				<h5><a href="">商品简介</a></h5>
+			
+			</div>
+			<div class="item">
+				<a href="">
+					<img src="images/TB2hzGBmf2H8KJjy0FcXXaDlFXa_!!2826417122_jpg_200x200q90.jpg" width="250px" />
+				</a>
+				<h5><a href="">商品简介</a></h5>
+			
+			</div>
+			<div class="item">
+				<a href="">
+					<img src="images/TB1ZDJMLpXXXXXUXpXXXXXXXXXX_!!0-item_pic_jpg_200x200q90.jpg" width="250px" />
+				</a>
+				<h5><a href="">商品简介</a></h5>
+			
+			</div>
+			<div class="item" >
+				<a href="">
+					<img src="images/TB1ZXv7nsrI8KJjy0FhXXbfnpXa_!!0-item_pic_jpg_200x200q90.jpg" width="250px" />
+				</a>
+				<h5><a href="">商品简介</a></h5>
+			
+			</div>
+		</div>
+	</body>
+
+</html>
