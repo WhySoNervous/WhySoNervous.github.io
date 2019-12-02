@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Document</title>
+
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
+  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<title>Simple Image Viewer | Demo page</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+#gallery img { border: none; }
+#gallery_nav { float: left; width: 150px; text-align: center; }
+#gallery_output { float: left; width: 600px; height: 550px; overflow: hidden; }
+#gallery_output img { display: block; margin: 20px auto 0 auto; }
+</style>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script language="javascript">
+	
+		$(document).ready(function() {
+			$("#gallery_output img").not(":first").hide();
+
+			$("#gallery a").click(function() {
+				if ( $("#" + this.rel).is(":hidden") ) {
+					$("#gallery_output img").slideUp();
+					$("#" + this.rel).slideDown();
+				}
+			});
+		});
+
+	</script>
+
+
+</head>
+<body>
+	
+
+
+<div class="sticky">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">WebSiteName</a></h1>
+      </li>
+     
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <ul class="left">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">新手</a></li>
+        <li><a href="#">进阶</a></li>
+        <li><a href="#">专业</a></li>    
+      </ul>
+    </section>
+  </nav>
+</div>
+
+<!-- 初始化 Foundation JS -->
+
+
+  <h1></h1>
+  <p>This is a demo page. You can view the supporting article <a href="http://jqueryglobe.com/article/simple-image-viewer">here</a></p>
+
+
+</body>
+</html>
